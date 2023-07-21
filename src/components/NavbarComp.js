@@ -17,6 +17,9 @@ export default function NavbarComp() {
     <Navbar id="navbar" className="custom-navbar">
       <NavbarBrand>
         <div className="navbar">
+          <div className="logosection">
+            <img className="logo" src="image/logo.png" alt="logo" />
+          </div>
         <h1 className="headNav">LUM DAPP</h1>
         </div>
       </NavbarBrand>

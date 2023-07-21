@@ -184,11 +184,11 @@ export default function Dashboard() {
 
   return (
     <Container id="dashboard">
-      <h1 className="main-head">LUM DAPP</h1>
-      <Row>
+      <p className="main-head"></p>
+      <Row className="row1">
         <Col xs="12" md="12" lg="5" className="mb-5 order-2 order-lg-1 ">
           {/* <div className="scrollable-cards"> */}
-          <Card body className="card1 mb-3">
+          <Card body className="card1 mb-3 ">
             <Row>
               <Col xs="12">
                 <CardTitle tag="h5">Staking Rewards</CardTitle>
