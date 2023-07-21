@@ -1,0 +1,56 @@
+
+
+body{
+    background-color: #212529;
+}
+.custom-navbar{
+border:1px solid gray;
+padding-bottom: 5px !important;
+}
+
+.form{
+    border:1px solid gray;
+    margin-top:40px !important;
+  padding: 10px !important;
+    border-radius: 16px;
+   
+}
+
+
+.inputGroup{
+    border-radius:10px;
+    border:1px solid gray;
+    margin-bottom: 10px;
+}
+.custom-input{
+    border-radius: 10px !important ;
+    
+}
+
+.container2{
+    border:1px solid red;
+}
+
+.spn{
+    color: green !important;
+}
+
+.approvebtn , .refferalbtn{
+    border-radius: 8px !important;
+    border:1px solid gray !important;
+    
+}
+
+
+.package-card{
+    border-radius: 5px !important;
+   border:1px solid gray !important;
+   margin-top: 5px !important;
+}
+
+
+.second-container{
+border: 1px solid red;
+    
+    
+}

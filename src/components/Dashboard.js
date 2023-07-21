@@ -184,7 +184,7 @@ export default function Dashboard() {
 
   return (
     <Container id="dashboard">
-      <h1 className="main-head">Staking Dashboard</h1>
+      <h1 className="main-head">LUM DAPP</h1>
       <Row>
         <Col xs="12" md="12" lg="5" className="mb-5 order-2 order-lg-1 ">
           {/* <div className="scrollable-cards"> */}
@@ -410,50 +410,50 @@ export default function Dashboard() {
           {/* </div> */}
         </Col>
 
-        <Col xs="12" md="12" lg="7" className="mb-5 order-1 order-lg-2">
-          <Card body className="card3 form">
+        <Col xs="12" md="12" lg="7" className="mb-5 order-1 order-lg-2 second-container">
+          <Card body className="card3 form ">
             {/* <Card> */}
             <Row className="mt-4">
               <Col md="4">
                 <Card
                   onClick={() => handlePackageClick(10, 90, 90)}
-                  className={`package-card mb-2 h-75 text-center ${
+                  className={`package-card card-btn mb-2 mt-2 h-75 text-center ${
                     activeCard === 10 ? "active" : ""
                   }`}
                 >
-                  <CardTitle>PACKAGE ONE</CardTitle>
-                  <CardBody>90-days dailyEarn 1%</CardBody>
+                  <CardTitle>POOL-1 </CardTitle>
+                  <CardBody>90-days</CardBody>
                 </Card>
-                <Col className="gray min-dep">minimum deposit 10$-5000$</Col>
+                <Col className="green min-dep mb-2">minimum  10$-5000$</Col>
               </Col>
               <Col md="4">
                 <Card
                   onClick={() => handlePackageClick(5001, 120, 120)}
-                  className={`package-card mb-2 h-75 text-center ${
+                  className={`package-card mb-2 mt-2 h-75 text-center ${
                     activeCard === 5001 ? "active" : ""
                   }`}
                 >
-                  <CardTitle>PACKAGE TWO</CardTitle>
-                  <CardBody>120-days dailyEarn 1%</CardBody>
+                  <CardTitle>POOL-2</CardTitle>
+                  <CardBody>120-days</CardBody>
                 </Card>
-                <Col className="gray min-dep">minimum deposit 5001$-15000$</Col>
+                <Col className="green min-dep mb-2">minimum  5001$-15000$</Col>
               </Col>
               <Col md="4">
                 <Card
                   onClick={() => handlePackageClick(15001, 150, 150)}
-                  className={`package-card mb-2 h-75 text-center ${
+                  className={`package-card mb-2 mt-2 h-75 text-center ${
                     activeCard === 15001 ? "active" : ""
                   }`}
                 >
-                  <CardTitle>PACKAGE THREE</CardTitle>
-                  <CardBody>150-days dailyEarn 1%</CardBody>
+                  <CardTitle>POOL-3</CardTitle>
+                  <CardBody>150-days</CardBody>
                 </Card>
-                <Col className="gray min-dep">minimum deposit 15001$</Col>
+                <Col className="green min-dep">minimum  15001$</Col>
               </Col>
             </Row>
             {/* </Card> */}
-            <Form>
-              <FormGroup className="mt-5">
+            <Form className="form">
+              <FormGroup className="mt-5 ">
                 <Row>
                   <Col xs="8">Enter Amount</Col>
                   <Col>
@@ -466,8 +466,9 @@ export default function Dashboard() {
               <FormGroup className="mb-5">
                 <Row>
                   <Col>
-                    <InputGroup>
+                    <InputGroup className="inputGroup">
                       <Input
+                      
                         type="number"
                         placeholder={stakeValue}
                         value={stakeValue}
@@ -495,8 +496,8 @@ export default function Dashboard() {
                       />
                       <span className="input-group-text">USDT</span>
                     </InputGroup>
-                    <Col xs="12" className="gray">
-                      {packageData?.apy}% locked for {packageData?.days} days
+                    <Col xs="12" className="green">
+                      {packageData?.apy}% apy for {packageData?.days} days
                     </Col>
                   </Col>
                 </Row>
@@ -518,7 +519,7 @@ export default function Dashboard() {
                     <Col>
                       <Button
                         color="primary"
-                        className="button form-button"
+                        className="button form-button approvebtn"
                         onClick={() => {
                           console.log(
                             allowance,
@@ -552,7 +553,7 @@ export default function Dashboard() {
                           : "Stake"}
                       </Button>
                       <Button
-                        className="button form-button my-3"
+                        className="button form-button my-3 refferalbtn"
                         disabled={!address}
                         onClick={() => {
                           navigator.clipboard.writeText(

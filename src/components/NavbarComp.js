@@ -16,7 +16,9 @@ export default function NavbarComp() {
   return (
     <Navbar id="navbar" className="custom-navbar">
       <NavbarBrand>
-        <h1 className="headNav">LUM</h1>
+        <div className="navbar">
+        <h1 className="headNav">LUM DAPP</h1>
+        </div>
       </NavbarBrand>
       <Button color="primary" className="nav-button" onClick={connect}>
         {!address ? "Connect" : address?.replace(address?.slice(6, 38), "...")}
