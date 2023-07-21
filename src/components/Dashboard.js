@@ -183,13 +183,13 @@ export default function Dashboard() {
     });
 
   return (
-    <Container id="dashboard">
+    <Container id="dashboard"  className="container-fluid">
       <p className="main-head"></p>
       <Row className="row1">
-        <Col xs="12" md="12" lg="5" className="mb-5 order-2 order-lg-1 ">
+        <Col xs="12" md="12" lg="5" className="mb-5 order-2 order-lg-1  column1">
           {/* <div className="scrollable-cards"> */}
-          <Card body className="card1 mb-3 ">
-            <Row>
+          <Card body className="card1 mb-3  ">
+            <Row >
               <Col xs="12">
                 <CardTitle tag="h5">Staking Rewards</CardTitle>
               </Col>
@@ -207,6 +207,7 @@ export default function Dashboard() {
                   </Row>
                 </Col> */}
             </Row>
+
             <Row>
               <Col>
                 <CardImg />
@@ -413,7 +414,7 @@ export default function Dashboard() {
         <Col xs="12" md="12" lg="7" className="mb-5 order-1 order-lg-2 second-container">
           <Card body className="card3 form ">
             {/* <Card> */}
-            <Row className="mt-4">
+            <Row className="mt-4  rowone">
               <Col md="4">
                 <Card
                   onClick={() => handlePackageClick(10, 90, 90)}
